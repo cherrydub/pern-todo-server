@@ -21,11 +21,11 @@ module.exports = {
   development: {
     client: "pg",
     connection: {
-      host: process.env.DB_HOST,
-      user: process.env.DB_USERNAME,
+      host: "dpg-cki114kldqrs73f5pagg-a.oregon-postgres.render.com",
+      user: "todoapp_ocfj_user",
       password: process.env.DB_PASSWORD,
       database: "todoapp_ocfj",
-      port: process.env.DB_PORT,
+      port: 5432,
       ssl: { rejectUnauthorized: false },
     },
     migrations: {
