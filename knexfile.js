@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 // module.exports = {
 //   development: {
 //     client: "pg",
@@ -23,7 +25,7 @@ module.exports = {
     connection: {
       host: "dpg-cki114kldqrs73f5pagg-a.oregon-postgres.render.com",
       user: "todoapp_ocfj_user",
-      password: "UHc3cCpqQ0EuNaAEl3MHB7kbXMbTv4NL",
+      password: process.env.DB_PASSWORD,
       database: "todoapp_ocfj",
       port: 5432,
       ssl: { rejectUnauthorized: false },
