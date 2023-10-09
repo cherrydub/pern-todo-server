@@ -23,11 +23,11 @@ module.exports = {
   development: {
     client: "pg",
     connection: {
-      host: "dpg-cki114kldqrs73f5pagg-a.oregon-postgres.render.com",
-      user: "todoapp_ocfj_user",
+      host: process.env.DB_HOST,
+      user: process.env.DB_USERNAME,
       password: process.env.DB_PASSWORD,
-      database: "todoapp_ocfj",
-      port: 5432,
+      database: process.env.DB_NAME,
+      port: process.env.DB_PORT,
       ssl: { rejectUnauthorized: false },
     },
     migrations: {
